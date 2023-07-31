@@ -5,53 +5,41 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>LAVERNE</title>
-		<link rel="stylesheet" href="./css/style.css" type="text/css">
-		<link rel="shortcut icon" href="https://laverne.llc/favicon.svg" type="image/x-icon">
-		<script src="./LAVERNE_files/jquery.min.js"></script>
-		<script src="./js/menu.js"></script>
-		<script src="./js/classes.js"></script>
+		<link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/main.css">	
 	</head>
 	
 	<body>
 	
-		<header class="head small">
-		
-			<div class="logo"><a href="https://laverne.llc/index.php" title="LAVERNE">LAVERNE</a></div>
-	
+		<header class="head">
+			<div class="logo"><a href="./index.html" title="LAVERNE">LAVERNE</a></div>
 			<nav>
-				<a href="https://laverne.llc/#" class="burger"><span class="burger_icon"></span></a>
-				<ul class="nav_list">
-					<li><a href="https://laverne.llc/index.php" class="active">Home</a></li>
-					<li><a href="https://laverne.llc/about.php">About us</a></li>
-					<li><a href="https://laverne.llc/services.php">Services</a></li>
-					<li><a href="https://laverne.llc/clients.php">Our clients</a></li>
-					<li><a href="https://laverne.llc/how-is-it-working.php">How is it working?</a></li>
-					<li><a href="https://laverne.llc/work-with-us.php">Work with us</a></li>
-					<li><a href="https://dashboard.laverne.llc/">Sign in</a></li>
-					<li class="mobile"><a href="https://laverne.llc/prohibited-items.php">Prohibited items</a></li>
-					<li class="mobile"><a href="https://laverne.llc/terms-and-conditions.php">Terms &amp; Conditions</a></li>
-					<li class="mobile"><a href="https://laverne.llc/countries-list.php">Countries</a></li>
-					<li class="mobile"><a href="https://laverne.llc/faq.php">FAQ</a></li>
-				</ul>
+			  <a href="#" class="burger"><span class="burger_icon"></span></a>
+			  <ul class="nav_list">
+				<li><a href="./index.html" class="active">Home</a></li>
+				<li><a href="./about.html">About us</a></li>
+				<li><a href="./services.html">Services</a></li>
+				<li><a href="./clients.html">Our clients</a></li>
+				<li><a href="./how-works.html">How is it working?</a></li>
+				<li><a href="./work.html">Work with us</a></li>
+			  </ul>
 			</nav>
-			
-		</header>
+		  </header>
 		
-		<section id="home_1">
+		<section class="banner" id="home_1">
 			
-			<div class="img"><img src="./LAVERNE_files/home_1.webp"></div>
-			<div class="img"><img src="./LAVERNE_files/home_2.webp"></div>
 			<div class="content">
 				<h1>The best elegant solutions <span>for great clients</span></h1>
 				<div class="text">
 					Our organization allows you to shop in the USA from anywhere in the world without bureaucracy and at almost no cost.<br><br>We help deliver genuine US products to your home, wherever it is, at the lowest shipping rates.
 				</div>
-				<div class="btn"><a href="https://laverne.llc/sign-up.php">Get started</a></div>
+				<div class="btn"><a href="./sign-up.html">Get started</a></div>
 			</div>
 
 		</section>
 		
-		<section id="home_2">
+		<section class="page_content" id="home_2">
 			
 			<div class="content">
 				<h2>About us</h2>
@@ -67,22 +55,21 @@
 
 		</section>
 		
-		<section id="home_3">
+		<section class="page_content" id="home_3">
 			
-			<div class="img"><img src="./LAVERNE_files/home_3.webp"></div>
 			<div class="content">
 				<h2>MORE THAN SOLUTIONS</h2>
 				<ul>
-					<li><div class="img"><img src="./LAVERNE_files/ico1.svg"></div> Track your package<br>anywhere</li>
-					<li><div class="img"><img src="./LAVERNE_files/ico2.svg"></div>Private delivery<br>address</li>
-					<li><div class="img"><img src="./LAVERNE_files/ico3.svg"></div>From many stores<br>to one batch</li>
+					<li><div class="img"><img src="./ico/ico1.svg"></div> Track your package<br>anywhere</li>
+					<li><div class="img"><img src="./ico/ico2.svg"></div>Private delivery<br>address</li>
+					<li><div class="img"><img src="./ico/ico3.svg"></div>From many stores<br>to one batch</li>
 				</ul>
-				<div class="btn"><a href="https://laverne.llc/sign-up.php">Get started</a></div>
+				<div class="btn"><a href="./sign-up.html">Get started</a></div>
 			</div>
 
 		</section>
 		
-		<section id="home_4">
+		<section class="page_content" id="home_4">
 			
 			<div class="content">
 				<h2>Testimonials</h2>
@@ -90,26 +77,25 @@
 					<li>
 						<div class="text">If you don't have enough time to place an order in online shop and choose the time convenient for delivery yourself - these guys will save your time and do that for you! They helped me to place an order and delivered it in perfect condition and nicely packaged exactly by the time I returned home from abroad.</div>
 						<div class="name">Joyce K. Reyes</div>
-						<div class="ava"><img src="./LAVERNE_files/ava1.jpg"></div>
+						<div class="ava"><img src="./#"></div>
 					</li>
 					<li>
 						<div class="text">I am a shopaholic and I love clothes and shoes! What I don't like at all is communicating with delivery services and customer support. Since I started to use LAVERNE services, I have been enjoying my orders without wasting my time on things I've mentioned above, because they do that for me. I know I can trust the company and rely on them - I always get my orders promptly and they are perfectly packed.</div>
 						<div class="name">Deborah D. Chadwick</div>
-						<div class="ava"><img src="./LAVERNE_files/ava2.jpg"></div>
+						<div class="ava"><img src="./#"></div>
 					</li>
 					<li>
 						<div class="text">When I placed an order with LAVERNE for the first time, some problem with a payment occured and I was unable complete the transaction. I was so much surprised when Customer support replied to me within 10 minutes and helped me to solve the problem, that since then, I've become their loyal customer. Thank you guys, you're the best!</div>
 						<div class="name">Diane P. Blaine</div>
-						<div class="ava"><img src="./LAVERNE_files/ava3.jpg"></div>
+						<div class="ava"><img src="./#"></div>
 					</li>
 				</ul>
 			</div>
 
 		</section>
 		
-		<section id="home_5">
+		<section class="page_content" id="home_5">
 			
-			<div class="img"><img src="./LAVERNE_files/home_4.webp"></div>
 			<div class="content">
 				<h2>Pricing</h2>
 				<ul>
@@ -120,7 +106,7 @@
 						<div class="list">This service plan is ideal</div>
 						<div class="list">For customers, who can't afford the time</div>
 						<div class="list">To stay at home waiting for their shipment</div>
-						<div class="btn"><a href="https://laverne.llc/sign-up.php">Select plan</a></div>
+						<div class="btn"><a href="./sign-up.html">Select plan</a></div>
 					</li>
 					<li>
 						<div class="title">Plus</div>
@@ -129,7 +115,7 @@
 						<div class="list">All that is included in the previous plan</div>
 						<div class="list">Plus insurance against</div>
 						<div class="list">Any damage and in any case</div>
-						<div class="btn"><a href="https://laverne.llc/sign-up.php">Select plan</a></div>
+						<div class="btn"><a href="./sign-up.html">Select plan</a></div>
 					</li>
 					<li>
 						<div class="title">Super Plus</div>
@@ -138,7 +124,7 @@
 						<div class="list">In case you need</div>
 						<div class="list">To purchase something</div>
 						<div class="list">No one else should know about</div>
-						<div class="btn"><a href="https://laverne.llc/sign-up.php">Select plan</a></div>
+						<div class="btn"><a href="./sign-up.html">Select plan</a></div>
 					</li>
 				</ul>
 			</div>
@@ -152,17 +138,16 @@
 			<nav>
 				<h2>Navigation</h2>
 				<ul class="nav_list">
-					<li><a href="https://laverne.llc/index.php">Home</a></li>
-					<li><a href="https://laverne.llc/about.php">About us</a></li>
-					<li><a href="https://laverne.llc/services.php">Services</a></li>
-					<li><a href="https://laverne.llc/clients.php">Our clients</a></li>
-					<li><a href="https://laverne.llc/how-is-it-working.php">How is it working?</a></li>
-					<li><a href="https://laverne.llc/work-with-us.php">Work with us</a></li>
-					<li><a href="https://laverne.llc/sign-up.php">Sign up</a></li>
-					<li class="mobile"><a href="https://laverne.llc/prohibited-items.php">Prohibited items</a></li>
-					<li class="mobile"><a href="https://laverne.llc/terms-and-conditions.php">Terms &amp; Conditions</a></li>
-					<li class="mobile"><a href="https://laverne.llc/countries-list.php">Countries</a></li>
-					<li class="mobile"><a href="https://laverne.llc/faq.php">FAQ</a></li>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./about.html">About us</a></li>
+					<li><a href="./services.html">Services</a></li>
+					<li><a href="./clients.html">Our clients</a></li>
+					<li><a href="./how-works.html">How is it working?</a></li>
+					<li><a href="./work.html">Work with us</a></li>
+					<li class="mobile"><a href="./prohibited.html">Prohibited items</a></li>
+					<li class="mobile"><a href="./terms.html">Terms &amp; Conditions</a></li>
+					<li class="mobile"><a href="./contries.html">Countries</a></li>
+					<li class="mobile"><a href="./faq.html">FAQ</a></li>
 				</ul>
 			</nav>
 			
@@ -183,7 +168,10 @@
 			</div>
 		
 		</footer>
-		
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="./js/main.js"></script>
 	
 
 

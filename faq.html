@@ -5,39 +5,29 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>LAVERNE</title>
-		<link rel="stylesheet" href="./LAVERNE_files/style.css" type="text/css">
-		<link rel="shortcut icon" href="https://laverne.llc/favicon.svg" type="image/x-icon">
-		<script src="./LAVERNE_files/jquery.min.js"></script>
-		<script src="./LAVERNE_files/menu.js"></script>
-		<script src="./LAVERNE_files/classes.js"></script>
+		<link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/main.css">	
 	</head>
 	
 	<body>
 	
 		<header class="head">
-		
-			<div class="logo"><a href="https://laverne.llc/index.php" title="LAVERNE">LAVERNE</a></div>
-	
+			<div class="logo"><a href="./index.html" title="LAVERNE">LAVERNE</a></div>
 			<nav>
-				<a href="https://laverne.llc/faq.php#" class="burger"><span class="burger_icon"></span></a>
-				<ul class="nav_list">
-					<li><a href="https://laverne.llc/index.php">Home</a></li>
-					<li><a href="https://laverne.llc/about.php">About us</a></li>
-					<li><a href="https://laverne.llc/services.php">Services</a></li>
-					<li><a href="https://laverne.llc/clients.php">Our clients</a></li>
-					<li><a href="https://laverne.llc/how-is-it-working.php">How is it working?</a></li>
-					<li><a href="https://laverne.llc/work-with-us.php">Work with us</a></li>
-					<li><a href="https://dashboard.laverne.llc/">Sign in</a></li>
-					<li class="mobile"><a href="https://laverne.llc/prohibited-items.php">Prohibited items</a></li>
-					<li class="mobile"><a href="https://laverne.llc/terms-and-conditions.php">Terms &amp; Conditions</a></li>
-					<li class="mobile"><a href="https://laverne.llc/countries-list.php">Countries</a></li>
-					<li class="mobile"><a href="https://laverne.llc/faq.php">FAQ</a></li>
-				</ul>
+			  <a href="#" class="burger"><span class="burger_icon"></span></a>
+			  <ul class="nav_list">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./about.html" class="active">About us</a></li>
+				<li><a href="./services.html">Services</a></li>
+				<li><a href="./clients.html">Our clients</a></li>
+				<li><a href="./how-works.html">How is it working?</a></li>
+				<li><a href="./work.html">Work with us</a></li>
+			  </ul>
 			</nav>
-			
-		</header>
+		  </header>
 		
-		<section id="faq_1">
+		<section class="banner" id="faq_1">
 			
 			<div class="content">
 				<h1>FREQUENTLY ASKED QUESTIONS</h1>
@@ -45,7 +35,7 @@
 
 		</section>
 		
-		<section id="faq_2">
+		<section class="page_content" id="faq_2">
 			
 			<div class="content">
 				
@@ -229,17 +219,16 @@
 			<nav>
 				<h2>Navigation</h2>
 				<ul class="nav_list">
-					<li><a href="https://laverne.llc/index.php">Home</a></li>
-					<li><a href="https://laverne.llc/about.php">About us</a></li>
-					<li><a href="https://laverne.llc/services.php">Services</a></li>
-					<li><a href="https://laverne.llc/clients.php">Our clients</a></li>
-					<li><a href="https://laverne.llc/how-is-it-working.php">How is it working?</a></li>
-					<li><a href="https://laverne.llc/work-with-us.php">Work with us</a></li>
-					<li><a href="https://laverne.llc/sign-up.php">Sign up</a></li>
-					<li class="mobile"><a href="https://laverne.llc/prohibited-items.php">Prohibited items</a></li>
-					<li class="mobile"><a href="https://laverne.llc/terms-and-conditions.php">Terms &amp; Conditions</a></li>
-					<li class="mobile"><a href="https://laverne.llc/countries-list.php">Countries</a></li>
-					<li class="mobile"><a href="https://laverne.llc/faq.php">FAQ</a></li>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./about.html">About us</a></li>
+					<li><a href="./services.html">Services</a></li>
+					<li><a href="./clients.html">Our clients</a></li>
+					<li><a href="./how-works.html">How is it working?</a></li>
+					<li><a href="./work.html">Work with us</a></li>
+					<li class="mobile"><a href="./prohibited.html">Prohibited items</a></li>
+					<li class="mobile"><a href="./terms.html">Terms &amp; Conditions</a></li>
+					<li class="mobile"><a href="./contries.html">Countries</a></li>
+					<li class="mobile"><a href="./faq.html">FAQ</a></li>
 				</ul>
 			</nav>
 			
@@ -260,7 +249,10 @@
 			</div>
 		
 		</footer>
-		
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+		<script src="./js/jq.js"></script>
+		<script src="./js/main.js"></script>
 	
 
 
