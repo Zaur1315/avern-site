@@ -65,6 +65,7 @@
   
   /* Стили для бургер-меню на планшетной и мобильной версии */
   @media (max-width: 991.98px) {
+    
     .head .logo {
       flex: 1;
     }
@@ -126,7 +127,7 @@
       display: block;
       width: 25px;
       height: 3px;
-      background-color: #333;
+      background-color: var(--menu-link-color);
       position: absolute;
       right: 0;
       transition: transform 0.3s ease;
@@ -152,11 +153,31 @@
     .burger.open span::before {
       top: 0;
       transform: rotate(-45deg);
+      background-color: var(--main-color);
     }
   
     .burger.open span::after {
       top: 0;
       transform: rotate(45deg);
+      background-color: var(--main-color);
+
+    }
+
+    .head{
+      padding: 5px 10px;
+    }
+
+    .head nav ul {
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .head nav ul li a{
+      color: var(--button-color);
+      font-size: 24px;
+      line-height: 2;
+      
     }
   }
   
@@ -172,4 +193,8 @@
     to {
       opacity: 1;
     }
+  }
+
+  @media (max-width: 768px) {
+
   }
