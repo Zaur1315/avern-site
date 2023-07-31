@@ -1,0 +1,10 @@
+:root{
+    --main-color: #333;
+    --logo-text-color: #f7d0ff;
+    --menu-link-color: #fae3ff;
+    --white-bg: #fff;
+    --grey-bg: #f8f9fa;
+    --button-color: #471b7f;
+    --second-h-color: #d29bff;
+    --shadow-color: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }  
