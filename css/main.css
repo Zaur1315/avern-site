@@ -912,6 +912,64 @@ box-shadow: var(--shadow-color);
     text-align: start;
   }
 
+  #sign_1 .line {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#sign_1 .line .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#sign_1 .line .input,
+#sign_1 .line .select {
+    flex: 1;
+}
+
+#sign_1 .input input,
+#sign_1 .select select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#sign_1 .btn input {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#sign_1 #sign-up-done-message {
+    display: none;
+    color: green;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#sign_1.active #sign-up-done-message {
+    display: block;
+}
+
+#sign_1{
+  background-color: var(--main-color);
+  padding-top: 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   
   /* Анимация появления пунктов меню */
   @keyframes fadeInListItem {
