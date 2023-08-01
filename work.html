@@ -11,6 +11,10 @@
 	</head>
 	
 	<body>
+        <div class="preloader" id="preloader">
+            <div class="preloader-logo animate__animated animate__pulse wow"><img src="favicon.png" alt="logo"></div>
+            <div class="preloader-name animate__animated animate__pulse wow">LAVERNE</div>
+        </div>
 	
 		<header class="head">
 			<!-- <div class="head-wrap"> -->
@@ -23,85 +27,96 @@
 				<li><a href="./services.html">Services</a></li>
 				<li><a href="./clients.html">Our clients</a></li>
 				<li><a href="./how-works.html">How is it working?</a></li>
-				<li><a href="./work.html">Work with us</a></li>
+				<li><a href="./work.html" class="active">Work with us</a></li>
+                <li><a href="./sign-in.html" class="sign">Sign In</a></li>
 			  </ul>
 			</nav>
 			<!-- </div> -->
 		  </header>
 		
-		<section id="work_1">
+		<section id="sign_1">
 			
 			<div class="content">
-				<h1>Application for Employment</h1>
+				<h1 class="wow animate__animated animate__fadeInUp animate__fast">Application for Employment</h1>
 								
-				<div class="form" id="response_message" style="margin-top: 0px; padding-bottom: 20px; padding-right: 10px;">
+				<div id="success-message" class="hidden">
 					
-				</div>
+				</div>					
+				
 
-				<div class="form" id="main_form">
+				<div class="form wow animate__animated animate__fadeInUp" id="main_form">
 							
-					<form action="https://laverne.llc/app.php" method="post" enctype="multipart/form-data" name="application_form">
+					<form id="work-form" action="./app.php" method="post" enctype="multipart/form-data" name="application_form">
 
 						<div class="line">
-							<div class="name">Position:</div>
-							<select class="select" name="position">
+							<div class="name"><label for="position">Position:</label></div>
+							<select class="select" name="position" id="position">
 								<option>Storeroom manager</option>
 								<option>Call support</option>
 								<option>Customer representative</option>
 							</select>
 						</div>
-									
-						<div class="line">
-							<div class="name">First Name:</div>
-							<div class="input"><input type="text" name="first_name" required=""></div>
-						</div>
-									
-						<div class="line">
-							<div class="name">Middle Name:</div>
-							<div class="input"><input type="text" name="middle_name"></div>
-						</div>
-									
-						<div class="line">
-							<div class="name">Last Name:</div>
-							<div class="input"><input type="text" name="last_name" required=""></div>
-						</div>
 
-						<div class="line">
-							<div class="name">E-mail:</div>
-							<div class="input"><input type="email" name="email" required=""></div>
+						<div class="row">
+							<div class="line">
+								<div class="name"> <label for="first_name">First Name:</label></div>
+								<div class="input"><input type="text" id="first_name" name="first_name" required></div>
+							</div>
+										
+							<div class="line">
+								<div class="name"> <label for="middle_name">Middle Name:</label></div>
+								<div class="input"><input type="text" id="middle_name" name="middle_name" required></div>
+							</div>
 						</div>
+						<div class="row">
+							<div class="line">
+								<div class="name"><label for="last_name">Last Name:</label></div>
+								<div class="input"><input type="text" id="last_name" name="last_name" required></div>
+							</div>
+	
+							<div class="line">
+								<div class="name"><label for="email">E-mail:</label></div>
+								<div class="input"><input type="email" id="email" name="email" required></div>
+							</div>
+						</div>
+													
+						
 						
 						<div class="line">
-							<div class="name">Password:</div>
-							<div class="input"><input type="password" name="clear_password" required=""></div>
+							<div class="name"><label for="clear_password">Password:</label></div>
+							<div class="input"><input type="password" id="clear_password" name="clear_password" required minlength="6"></div>
 						</div>
 
 						<div class="line">
-							<div class="name">Gender:</div>
-							<select class="select" name="gender">
+							<div class="name"> <label for="gender">Gender:</label></div>
+							<select class="select" id="gender" name="gender">
 								<option>Male</option>
 								<option>Female</option>
 							</select>
 						</div>
 						
 						<div class="line">
-							<div class="name">Upload Resume:</div>
-							<div class="input"><input type="file" name="resume"></div>
+							<div class="name"><label for="file">Upload Resume:</label></div>
+							<div class="input"><input type="file" id="file" name="resume"></div>
 						</div>
 
-						<div class="line">
-							<div class="name">Main phone:</div>
-							<div class="input"><input type="text" name="work_phone" required=""></div>
+						<div class="row">
+							<div class="line">
+								<div class="name"><label for="work_phone">Main phone:</label></div>
+								<div class="input"><input type="text" id="work_phone" name="work_phone" required=""></div>
+							</div>
+							
+							<div class="line">
+								<div class="name"><label for="home_phone">Additional phone:</label></div>
+								<div class="input"><input type="tel" id="home_phone" name="home_phone"></div>
+							</div>
 						</div>
+
 						
-						<div class="line">
-							<div class="name">Additional phone:</div>
-							<div class="input"><input type="text" name="home_phone"></div>
-						</div>
 
 						<div class="line">
-							<div class="name">Country:</div>
-							<select class="select" name="country">
+							<div class="name"><label for="country">Country:</label></div>
+							<select class="select" id="country" name="country">
 		                                            <option value="AF">Afghanistan</option>
 		                        <option value="AX">Åland Islands</option>
 		                        <option value="AL">Albania</option>
@@ -360,24 +375,34 @@
 							</select>
 						</div>
 						
-						<div class="line">
-							<div class="name">Address:</div>
-							<div class="input"><input type="text" name="address" required=""></div>
+						<div class="row">
+							<div class="line">
+								<div class="name"><label for="address">Address:</label></div>
+								<div class="input"><input type="text" id="address" name="address" required></div>
+							</div>
+							
+							<div class="line">
+								<div class="name"><label for="address2">Unit number (optional):</label></div>
+								<div class="input"><input type="text" id="address2" name="address2"></div>
+							</div>
 						</div>
 						
-						<div class="line">
-							<div class="name">Unit number (optional):</div>
-							<div class="input"><input type="text" name="address2"></div>
+						<div class="row">
+							<div class="line">
+								<div class="name"><label for="city">City:</label></div>
+								<div class="input"><input type="text" name="city" id="city" required></div>
+							</div>
+							<div class="line">
+								<div class="name"><label for="zip">ZIP:</label></div>
+								<div class="input"><input type="text" name="zip" id="zip" required></div>
+							</div>
 						</div>
 						
-						<div class="line">
-							<div class="name">City:</div>
-							<div class="input"><input type="text" name="city" required=""></div>
-						</div>
+						
 
 						<div class="line">
-							<div class="name">State:</div>
-							<select class="select" name="state">
+							<div class="name"><label for="state">State:</label></div>
+							<select class="select" name="state" id="state">
 								<option value="">Please select state</option>
 								<option value="AL">Alabama</option>
 								<option value="AK">Alaska</option>
@@ -433,10 +458,7 @@
 							</select>
 						</div>
 						
-						<div class="line">
-							<div class="name">ZIP:</div>
-							<div class="input"><input type="text" name="zip" required=""></div>
-						</div>
+						
 						
 						<div class="line">
 							<div class="name">Are you 18 years of age or older?</div>
@@ -486,6 +508,8 @@
 				  <li><a href="./terms.html">Terms &amp; Conditions</a></li>
 				  <li><a href="./contries.html">Countries</a></li>
 				  <li><a href="./faq.html">FAQ</a></li>
+                  <li><a href="./sign-in.html">Sign in</a></li>
+                  <li><a href="./sign-up.html">Sign up</a></li>
 				</ul>
 			  </div>
 			  <div class="footer-column">

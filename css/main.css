@@ -1,4 +1,5 @@
 @import url('./reset.css');
+@import url('./preloader.css');
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./vars.css');
@@ -894,6 +895,15 @@ box-shadow: var(--shadow-color);
     text-align: start;
 }
 
+#sign_1 #success-message{
+  color: var(--main-color);
+  background-color: #fff;
+  padding: 50px;
+  line-height: 1.6;
+  border-radius: 8px;
+
+}
+
   #faq_2 .accordion_target {
     max-height: 0;
     overflow: hidden;
@@ -912,6 +922,19 @@ box-shadow: var(--shadow-color);
     text-align: start;
   }
 
+  #sign_1 .content{
+    width: 768px;
+  }
+
+  #sign_1 .row{
+    display: flex;
+    gap: 10px;
+  }
+
+  #sign_1 .row .line{
+    width: 50%;
+  }
+
   #sign_1 .line {
     display: flex;
     flex-direction: column;
@@ -921,58 +944,104 @@ box-shadow: var(--shadow-color);
 #sign_1 .line .name {
     font-weight: bold;
     margin-bottom: 5px;
-    color: var(--white-bg);
+    color: var(--menu-link-color);
 
 }
 
-#sign_1 label{
-}
 
 #sign_1 .line .input,
 #sign_1 .line .select {
+  background-color: var(--white-bg);
+  border-radius: 4px;
+  padding:7px;
+
     flex: 1;
+}
+#sign_1 .line .select {
+  padding: 15px;
+  
+}
+
+#sign_1 h1{
+  color: var(--second-h-color);
+  font-size: 48px;
+  text-align: center;
+  font-weight: 600;
+  margin: 50px;
 }
 
 #sign_1 .input input,
 #sign_1 .select select {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 #sign_1 .btn input {
-    padding: 10px 20px;
-    background-color: #4CAF50;
+    padding: 15px 80px;
+    margin-top: 10px;
+    background-color: var(--button-color);
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 600;
 }
 
-#sign_1 #sign-up-done-message {
-    display: none;
-    color: green;
-    font-weight: bold;
-    padding: 10px;
-    border: 1px solid green;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
 
-#sign_1.active #sign-up-done-message {
-    display: block;
-}
 
 #sign_1{
   background-color: var(--main-color);
   padding-top: 100px;
+  padding-bottom: 100px ;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.modal , .modal-2{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content , .modal-content-2{
+  background-color: #fff;
+  padding: 50px 20px 40px;
+  display: flex;
+  position: absolute;
+  top:50%;
+  right: 50%;
+  transform: translate(50%);
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+
+.modal-close , .modal-close-2{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.sign-in .content{
+  max-width: 500px;
 }
 
   
@@ -1073,6 +1142,19 @@ box-shadow: var(--shadow-color);
     #faq_2{
       margin: 10px;
     }
+
+    #sign_1 .content{
+      width: 375px;
+    }
+
+    #sign_1 #sign-up-form .row, #sign_1 #work-form .row{
+      flex-direction: column;
+    }
+
+    #sign_1 #sign-up-form .row .line, #sign_1 #work-form .row .line, #sign_1 .btn input{
+        width: 100%;
+    }
+
 
     
   }
