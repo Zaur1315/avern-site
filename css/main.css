@@ -921,6 +921,11 @@ box-shadow: var(--shadow-color);
 #sign_1 .line .name {
     font-weight: bold;
     margin-bottom: 5px;
+    color: var(--white-bg);
+
+}
+
+#sign_1 label{
 }
 
 #sign_1 .line .input,
