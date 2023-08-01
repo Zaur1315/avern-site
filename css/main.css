@@ -831,10 +831,86 @@ box-shadow: var(--shadow-color);
   }
 
 
-  
+
+  #faq_1{
+    /* background-image: url('../img/aircraft-gdf9694110_1920.jpg'); */
+    background: url('../img/airplane-g79c49d647_1920.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 300px;
+  }
+
+  #faq_1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(71, 1, 73, 0.692);
+    z-index: 1;
+  }
+
+
+  #faq_1 .content{
+    z-index: 2;
+  }
+
+  #faq_1 h1{
+    margin-top: 100px;
+    color: var(--menu-link-color);
+    font-size: 68px;
+  }
 
 
 
+
+  #faq_2 .accordion{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1140px;
+
+  }
+
+  #faq_2 .accordion_item {
+    margin-bottom: 10px;
+}
+
+  #faq_2 .accordion_toggle {
+    display: none;
+}
+
+  #faq_2  .accordion_trigger {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border-radius: 4px;
+    color: var(--white-bg);
+    font-weight: bold;
+    text-align: start;
+}
+
+  #faq_2 .accordion_target {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
+        text-align: start;
+  }
+
+  #faq_2 .accordion_toggle:checked + .accordion_trigger {
+    background-color: var(--button-color);
+
+  }
+
+  #faq_2 .accordion_toggle:checked + .accordion_trigger + .accordion_target {
+    max-height: 500px; 
+    padding: 20px 20px 50px;
+    text-align: start;
+  }
 
   
   /* Анимация появления пунктов меню */
@@ -925,6 +1001,14 @@ box-shadow: var(--shadow-color);
     #countries_2 .list{
       flex-direction: column;
       max-width: 100%;
+    }
+
+    #faq_1 h1{
+      font-size: 38px;
+    }
+
+    #faq_2{
+      margin: 10px;
     }
 
     
