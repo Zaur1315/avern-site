@@ -34,10 +34,15 @@
     align-items: center;
 
   }
+
+
   
   .head .logo a img{
     width: 80px;
+    object-fit: contain;
     margin-right: 20px;
+     filter: drop-shadow(0 0 2px  #f7d0ffeb);
+
   }
 
   /* Стили для навигационного меню */
